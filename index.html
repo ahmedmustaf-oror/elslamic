@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Quran and Prayer</title>
+</head>
+<body>
+  <div class="clockon">
+    <h3 id="h3"></h3>
+    <div id="clock"></div>
+    <img id="m" src="m.jpg">
+  </div>
+  <div class="prayer">
+    <h2>🕌 مواقيت الصلاة</h2>
+    <div class="container">
+      
+      <select id="city">
+        <option value="Cairo">القاهرة</option>
+        <option value="Alexandria">الاسكندرية</option>
+        <option value="Giza">الجيزة</option>
+        <option value="Qalyubia">القليوبية</option>
+        <option value="Aswan">أسوان</option>
+        <option value="Luxor">الأقصر</option>
+        <option value="Faiyum">الفيوم</option>
+        <option value="Port Said">بور سعيد</option>
+        <option value="Minya">المنيا</option>
+      </select>
+      <button onclick="gettime()">تحديث المواقيت</button>
+      <div class="date" id="date"></div>
+      <div id="times"></div>
+    </div>
+  </div>
+  <div class="quran">
+    <h2>القرآن الكريم</h2>
+    <input type="number" id="page" min="1" max="604" placeholder="أدخل رقم الصفحة (1-604)">
+    <button onclick="getpage()">عرض الصفحة</button>
+    <img id="img">
+    <br>
+    <br>
+    <div id="con">
+      <button id="tp" onclick="theprevious()">السابق</button>
+      <span id="h4"></span>
+      <button id="tn" onclick="thenext()">التالي</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <footer>
+  <div class="footer-content">
+    <p>OROR</p>
+    <p>01021520331</p>
+  </div>
+</footer>
+</body>
+</html>
